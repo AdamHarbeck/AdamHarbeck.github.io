@@ -3,25 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a5b10b36-fcb4-400f-aa06-6b19afd6fff3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/.idea/HTML News Web Page.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/Author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/gundam award.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/gundam rx78.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/hathaway novel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/hathaway poll.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/hathaway pool.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/hathaway screening.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/ox gundam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/stardust memory.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/stardust memory2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/stardust memory3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/HTML News Web Page/images/war in the pocket.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +62,7 @@
       <workItem from="1614882545287" duration="47000" />
       <workItem from="1615154752107" duration="6541000" />
       <workItem from="1615163211161" duration="267000" />
+      <workItem from="1615164110622" duration="429000" />
     </task>
     <servers />
   </component>

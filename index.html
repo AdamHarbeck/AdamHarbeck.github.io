@@ -18,32 +18,49 @@
                 <li><a href="#">Tumblr</a></li>
             </ul>
         </nav>
+
     <input type="search" placeholder="Search">
     <h1>KOS-METIK</h1>
+
+    <a href="#">Account</a> <!--This should have a hover state, done with CSS-->
+    <label for="currency"></label>
+    <select name="currency" id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="CNY">CNY</option>
+        <option value="AED">AED</option>
+        <option value="RUB">RUB</option>
+    </select>
+    <a href="#">Cart</a>
+
+    <hr>
+    
     <nav>
-        <a href="#">Account</a> <!--This should have a hover state, done with CSS-->
-        <label for="currency"></label>
-        <select name="currency" id="currency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="INR">INR</option>
-            <option value="JPY">JPY</option>
-            <option value="CAD">CAD</option>
-            <option value="CNY">CNY</option>
-            <option value="AED">AED</option>
-            <option value="RUB">RUB</option>
-        </select>
-        <a href="#">Cart</a>
+        <ul>
+            <li><a href="#">Home</a></li> <!--Home and Blog are the only ones non-hoverable dropdowns-->
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Makeups</a></li>
+            <li><a href="#">Lipsticks</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+        </ul>
     </nav>
+
 </header>
 
 <main>
     <h2>Face Makeup</h2>
     <h3><a href="#">Home</a> / Face Makeup</h3>
+
     <button type="button">Grid View</button>
     <button type="button">List View</button>
+
     <label for="sorting">Sort by:</label>
     <select name="sorting" id="sorting">
         <option value="Featured">Featured</option>
@@ -55,6 +72,7 @@
         <option value="Date, New to Old">Date, New to Old</option>
         <option value="Best Selling">Best Selling</option>
     </select>
+
     <article>
         <img src="images/foundation.jpg" alt="A bottle of foundation." />
         <h3><a href="#">Foundation</a></h3>
