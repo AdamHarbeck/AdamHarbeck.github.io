@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Righteous&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Righteous', cursive;
+*/
+
+h1, h2, h3, h4, h5, body, nav, a, p, ul ,li,
+input, select, button, article, section, footer{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+/*---- Typography Defaults ----*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    letter-spacing: .1rem;
+    background-color: #F9F5D8;
+    color: #223844;
+}
+h2, aside button {
+    font-family: "Righteous", cursive;
+    font-size: 1.6rem;
+}
+#currency, header nav, h2, aside button{
+    text-transform: uppercase;
+}
+#currency, header nav a, aside section a, article a, article p:nth-of-type(1){
+    font-weight: 600;
+}
+#currency, #breadCrumb li, aside p, article h3, article p:nth-of-type(1),aside button{
+    font-size: 1.6rem;
+}
+#topBar, header nav{
+    font-size: 1.2rem;
+}
+main label, main select, aside li, footer:not(h2){
+    font-size: 1.4rem;
+}
+header h2{
+    font-size: 3.6rem;
+}
+footer h2{
+    font-size: 1.8rem;
+}
+
+/*---- Default Structure ----
+------------------------------*/
+.wrapper{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+main{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+#footerWrapper{
+    max-width: 113rem;
+    margin: 0 auto;
+}
+
+#currency{
+    border: none;
+}
+#topBar p, #topBar ul{
+    padding: .5rem 1.5rem;
+    display: inline-block;
+}
+input, h1, header > a{
+    margin: 1rem 2rem 4rem 1.5rem;
+    padding: 1rem 0;
+}
+header nav li{
+    padding: 0 1rem;
+}
+header nav{
+    max-width: 58rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+#breadCrumb h2{
+letter-spacing: 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+#breadCrumb{
+    padding: 6rem 1rem;
+    text-align: center;
+}
+main > button{
+    margin: 6rem 0 4rem 0 ;
+}
+main button:nth-of-type(1){
+    margin-left: 1.5rem;
+}
+main select{
+    width: 20rem;
+    height: 4rem;
+}
+main label{
+    padding-left: 30rem;
+}
+#mainPhoto {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+}
+main article{
+    max-width: 1000px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+}
+
+/*---- Header ----
+-------------------*/
+#topBar img{
+    max-width: 2rem;
+    height: auto;
+}
+#topBar li{
+    display: inline-block;
+    padding: 0 .5rem;
+}
+#topBar{
+    background-color: #E74D7E;
+    color: #E3B49D;
+}
+#topBar p:nth-of-type(2){
+    margin: 0 18rem;
+}
+header, header select {
+    background-color: #223844;
+}
+h1{
+    width: 261px;
+    height: 52px;
+    display: inline-block;
+    margin: 2.5rem 29rem;
+}
+#breadCrumb{
+    background-image: url("../images/kos_banner.jpg");
+    background-repeat: no-repeat;
+    color: #F9F5D8;
+}
+header input{
+    border: none;
+    background-color: #E74D7E;
+    padding-left: .5rem;
+}
+input::placeholder{
+    color: #223844;
+}
+#account{
+    display: inline-block;
+    background-image: url("../images/outline_perm_identity_black_24dp.png");
+    background-repeat: no-repeat;
+    width: 4.8rem;
+    height: 4.8rem;
+    text-indent: -9999px;
+}
+#cart{
+    display: inline-block;
+    background-image: url("../images/outline_shopping_bag_black_24dp.png");
+    background-repeat: no-repeat;
+    width: 4.8rem;
+    height: 4.8rem;
+    text-indent: -9999px;
+}
+/*---- Main ----
+-----------------*/
+img{
+    max-width: 25rem;
+    height: auto;
+}
+#mainPhoto{
+    display: block;
+}
+header, footer, aside button, main select{
+    color: #F9F5D8;
+}
+#breadCrumb li:nth-of-type(2), aside p, article p:nth-of-type(1), footer h2{
+    color: #E74D7E
+}
+header nav li, #breadCrumb li{
+    display: inline-block;
+}
+main > button{
+    background-color: #E74D7E;
+    border: none;
+    text-indent: -9999px;
+}
+main > button:nth-of-type(1){
+    background-image: url("../images/grid_view_white_24dp.svg");
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+}
+main > button:nth-of-type(2){
+    background-image: url("../images/list_white_24dp.svg");
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+}
+main select{
+    background-color: #E74D7E;
+}
+
+/*---- Aside ----
+------------------*/
+aside button{
+    background: linear-gradient(90deg, #E74D7E 45%, #F9F5D8 100%);
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+}
+aside li{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 1rem 0;
+    border-bottom: dashed .1rem;
+    max-width: 20rem;
+}
+aside li:nth-last-of-type(1){
+    border: none;
+}
+aside ul{
+    margin-left: 1.5rem;
+}
+aside img{
+    max-width: 10rem;
+}
+aside section:nth-of-type(4) li{
+    list-style-type: none;
+}
+
+/*---- Footer ----
+-------------------*/
+footer{
+    background-image: url("../images/footer_pic.jpg");
+    background-repeat: no-repeat;
+    max-width: 192rem;
+    height: auto;
+}
+footer img{
+    width: 3.5rem;
+    height: auto;
+    margin: 0 .5rem 0 .5rem;
+}
+footer section, #footerWrapper > ul  li, footer nav li{
+    display: inline-block;
+}
+#footerWrapper > ul{
+    max-width: 30rem;
+    margin: 0 auto 1rem auto;
+}
+footer section{
+    max-width: 25rem;
+    margin: 5rem 0 2rem 0;
+}
+footer nav li{
+    margin: 1rem;
+}
+footer section:nth-of-type(1){
+    margin: 5rem 10rem 2rem 1rem;
+}
+footer section:nth-of-type(2){
+    margin: 5rem 7.5rem 2rem 5rem;
+}
+footer section:nth-of-type(3){
+    margin: 5rem 5rem 2rem 7.5rem;
+}
+footer section:nth-of-type(4){
+    margin: 5rem auto 2rem 10rem;
+}
+footer section ul li{
+    margin: 1.5rem auto 1.5rem 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
