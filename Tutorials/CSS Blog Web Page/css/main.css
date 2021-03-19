@@ -22,11 +22,10 @@ html{
 }
 
 body{
-	font-size: 1.4rem;
 	line-height: 1.6;
-	font-family: 'Raleway', sans-serif;
+	font: 1.4rem 'Raleway', sans-serif;
 	color: #e1c2a3;
-	background-color: #020429;
+	background: #020429;
 }
 
 h1, h2{
@@ -58,7 +57,7 @@ img{
 a{
 	display: inline-block;
 	padding: .5rem 1rem;
-	background-color: rgba(255,255,255,.1);
+	background: rgba(255,255,255,.1);
 	color: #8de4ff;
 }
 a:not(nav a, #tags a){
@@ -75,6 +74,16 @@ nav, body > section, footer{
 }
 body > section{
 	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+body > section::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+footer::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 /* Header ============================== */
@@ -94,26 +103,52 @@ nav li{
 	display: inline-block;
 }
 /* Blog ================================ */
-#blog article:nth-of-type(1){
+#blog article:nth-of-type(1), #blog article:nth-of-type(4){
 	border-top: .5rem solid #e74c3c;
 }
-#blog article:nth-of-type(2){
+#blog article:nth-of-type(2), #blog article:nth-of-type(5){
 	border-top: .5rem solid #f1c40f;
 }
-#blog article:nth-of-type(3){
+#blog article:nth-of-type(3), #blog article:nth-of-type(6){
 	border-top: .5rem solid #1abc9c;
 }
 
+#blog article{
+	width: calc(100%/3 - 2rem);
+	float: left;
+}
+#blog article:not(:nth-of-type(3), :nth-of-type(6)){
+	margin-right: 2rem;
+}
+#blog article:nth-of-type(4){
+	clear: left;
+}
 /* News ================================ */
 time span{
 	font-size: 5rem;
 	color: #8de4ff;
 	vertical-align: middle;
 }
+#news article{
+	width: calc(100%/4 - 6rem/4);
+	float: left;
+}
+#news article:not(:nth-of-type(4)){
+	margin-right: 2rem;;
+}
 
 /* Donation ============================ */
 #donation{
-	background-image: url("../images/salvage.gif");
+	background: url("../images/salvage.gif");
+}
+
+/* About ============================== */
+#about section{
+	width: calc(100%/2 - 2rem);
+	float: left;
+}
+#about section:first-of-type{
+	margin-right: 2rem;
 }
 
 /* Footer ============================== */
@@ -125,71 +160,33 @@ footer h2 {
 	display: inline-block;
 }
 #tags a{
-	background-color: #e36397;
+	background: #e36397;
 	color: #f3d8c3;
 	padding: 0 .5rem .25rem .5rem;
 }
 
+footer section{
+	width: calc(30% - 2rem);
+	margin-right: 2rem;
+	float: left;
+}
+#tags{
+	width: calc(40%);
+	margin-right: 0;
+}
+
+
 /*
-Requirements:
-|> Colors: DONE
-	Include at least 2 new foreground and background colors. (At least 4 total)
-		What colors are there and where are they?
-		|> Body {c: #777 bgc:#222} DONE
-		|> h1, h2{c: #fff}
-		|> h3{c: #aaa}
-		|> a{c: #eee bgc: rgba(255,255,255,.1)}
-		|> header{bgc: #fff}
-		|> nav a{c: #555}
-		|> #logo{bg: rgba(0,0,0,.2)}
-		|> time span{c: #eee}
-		|> footer h2{c: #aaa}
-		|> #tags a{c: #eee bgc: #e74c3c}
-		|> colors: #777, #222, #fff, #aaa, #eee, rgba(255,.1), #555, rgba(0, .2), #e74c3c
-	-------------
-	|> There are 9 Colors. #EEE and #FFF are white
-	Colors: DONE
-	|> Body BGC: #020429 C: #E1C2A3
-	|> H1, H2 C: #F3D8C3
-	|> H3 C: #8DE4FF
-	|> A C: #8DE4FF
-	|> Nav A C: #020429
-	|> Time Span C: #8DE4FF
-	|> #Tags A C: #F3D8C3 BGC: #E36397
-	|> Footer H2 C: #8DE4FF
-	|> A:Not(Nav A, #Tags A) BGC: radial-gradient(circle, rgba(225,194,163,1) 0%, rgba(227,99,151,1) 100%) C: #020429
-|> Fonts: DONE
-	Include at least 2 new font families. (@import method)
-	What fonts are there and where are they?
-	|> body{f-f: Open Sans, sans-serif}
-	|> h1, h2{f-f: Abel, sans-serif}
-	-------------
-	|> Serif: Amiri
-	|> Sans-Serif: Raleway
-	font-family: 'Amiri', serif;
-	font-family: 'Raleway', sans-serif;
-
-|> Background Image: DONE
-	Include a new background image.
-	Where is the background image:
-	|> It is in the donation section.
-	-------------
-	|> image: ../images/salvage.gif | ../images/presence-ii.png
-
-|> Gradients:
-	Include a gradient background.
-	Where are gradients?
-	|> There aren't any. I was thinking of the header bgc,  body bgc, or the read more link buttons.
-	-------------
-	|> Gradient: A:Not(Nav A, #Tags A) BGC: radial-gradient(circle, rgba(225,194,163,1) 0%
-
-Make sure your CSS doc includes at least the following:
-	@import at-rules (this will be google fonts)
-	Typography properties (size and font family)
-	Background properties (colors and images)
-	Selectors like descendant, child, nth-of-type, etc. (All of these are included)
-Commit and Push
-	Commit and push your completed integrative to your GitHub inside a 'tutorial' directory.
+EXPAND YOUR KNOWLEDGE
+Add to HTML--
+--Include an extra paragraph of lorem ipsum to a blog article of your choice.
+--Add three more blog articles for a total of six
+	|--> DONE <--|
+Add to CSS--
+--Style the three new blog articles to have the same styling as the others.
+--Fix the layout issue caused by the ew blog articles.
+	|--> DONE <--|
+CSS DOC should include--
+--Shorthand properties
+--CSS Layout with floats
 */
-
-
