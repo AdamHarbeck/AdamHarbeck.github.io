@@ -21,16 +21,14 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.3rem;
+    font: 1.3rem "Montserrat", sans-serif;
     line-height: 1.7;
     letter-spacing: .1rem;
-    background-color: #F9F5D8;
+    background: #F9F5D8;
     color: #223844;
 }
 h2, aside button {
-    font-family: "Righteous", cursive;
-    font-size: 1.6rem;
+    font: 1.6rem "Righteous", cursive;
 }
 #currency, header nav, h2, aside button{
     text-transform: uppercase;
@@ -57,39 +55,32 @@ footer h2{
 /*---- Default Structure ----
 ------------------------------*/
 .wrapper{
-    max-width: 120rem;
+    max-width: 125rem;
     margin: 0 auto;
 }
 main{
-    max-width: 100rem;
+    max-width: 153rem;
     margin: 0 auto;
 }
 #footerWrapper{
-    max-width: 113rem;
+    max-width: 125rem;
     margin: 0 auto;
 }
 
 #currency{
     border: none;
 }
-#topBar p, #topBar ul{
-    padding: .5rem 1.5rem;
-    display: inline-block;
-}
-input, h1, header > a{
-    margin: 1rem 2rem 4rem 1.5rem;
-    padding: 1rem 0;
-}
+
 header nav li{
     padding: 0 1rem;
 }
 header nav{
-    max-width: 58rem;
+    max-width: 78rem;
     margin: 0 auto;
     padding-bottom: 2rem;
 }
 #breadCrumb h2{
-letter-spacing: 1rem;
+    letter-spacing: 1rem;
     max-width: 40rem;
     margin: 0 auto;
 }
@@ -97,87 +88,103 @@ letter-spacing: 1rem;
     padding: 6rem 1rem;
     text-align: center;
 }
-main > button{
-    margin: 6rem 0 4rem 0 ;
+#toolBar button, #toolBar label, #toolBar select{
+    margin: 6rem auto 4rem auto ;
 }
-main button:nth-of-type(1){
-    margin-left: 1.5rem;
-}
+
 main select{
     width: 20rem;
     height: 4rem;
 }
-main label{
-    padding-left: 30rem;
-}
 #mainPhoto {
     display: block;
-    margin: 40px auto;
+    margin: 2rem auto;
     max-width: 100%;
 }
 main article{
-    max-width: 1000px;
-    margin: 2rem auto 2rem auto;
+    max-width: 105rem;
+    margin: 1.5rem auto;
     padding: 1rem;
 }
 
 /*---- Header ----
 -------------------*/
 #topBar img{
-    max-width: 2rem;
+    max-width: 1.5rem;
     height: auto;
 }
 #topBar li{
     display: inline-block;
     padding: 0 .5rem;
+    margin: 0 0.5rem;
 }
 #topBar{
-    background-color: #E74D7E;
+    background: #E74D7E;
     color: #E3B49D;
+    padding: 1rem;
 }
-#topBar p:nth-of-type(2){
-    margin: 0 18rem;
+#topBar p:nth-of-type(1){
+    background: url("../images/smartphone.png") no-repeat left;
+    background-size: 1.5rem;
+    padding-left: 2.5rem;
+}
+#topBar .wrapper > a:nth-of-type(1){
+    background: url("../images/envelope.png") no-repeat left;
+    background-size: 1.5rem;
+    padding-left: 2.5rem;
 }
 header, header select {
-    background-color: #223844;
+    background: #223844;
 }
 h1{
-    width: 261px;
-    height: 52px;
-    display: inline-block;
-    margin: 2.5rem 29rem;
+    width: 26.1rem;
+    height: 5.2rem;
 }
 #breadCrumb{
-    background-image: url("../images/kos_banner.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/kos_banner.jpg") no-repeat;
     color: #F9F5D8;
 }
-header input{
+header input {
     border: none;
-    background-color: #E74D7E;
+    background: #E74D7E;
     padding-left: .5rem;
 }
 input::placeholder{
     color: #223844;
 }
 #account{
-    display: inline-block;
-    background-image: url("../images/outline_perm_identity_black_24dp.png");
-    background-repeat: no-repeat;
-    width: 4.8rem;
-    height: 4.8rem;
+
+    background: url("../images/outline_perm_identity_black_24dp.png") no-repeat left;
+    background-size: 2.6rem;
+    padding-right: 3rem;
     text-indent: -9999px;
+    margin-right: 2.5rem;
 }
 #cart{
-    display: inline-block;
-    background-image: url("../images/outline_shopping_bag_black_24dp.png");
-    background-repeat: no-repeat;
-    width: 4.8rem;
-    height: 4.8rem;
+    background: url("../images/outline_shopping_bag_black_24dp.png") no-repeat left;
+    background-size: 2.6rem;
+    padding-left: 3rem;
     text-indent: -9999px;
+    margin-left: 2.5rem;
 }
+header nav li:not(:nth-of-type(1)){
+    margin-left: 2.5rem;
+}
+header nav li:not(:nth-of-type(1), :nth-of-type(6)){
+    background: url("../images/down_arrow.png") no-repeat right;
+    background-size: 1.5rem;
+    padding-right: 2rem;
+}
+#breadCrumb a{
+    margin-right: .5rem;
+}
+.wrapper #logoBox{
+    border-bottom: solid #294351 0.1rem ;
+}
+
 /*---- Main ----
 -----------------*/
+
 img{
     max-width: 25rem;
     height: auto;
@@ -194,19 +201,20 @@ header, footer, aside button, main select{
 header nav li, #breadCrumb li{
     display: inline-block;
 }
-main > button{
-    background-color: #E74D7E;
+#toolBar button{
+    background: #E74D7E;
     border: none;
     text-indent: -9999px;
+    margin-right: 1rem;
 }
-main > button:nth-of-type(1){
+#toolBar button:nth-of-type(1){
     background-image: url("../images/grid_view_white_24dp.svg");
     background-repeat: no-repeat;
     width: 4rem;
     height: 4rem;
     background-position: center;
 }
-main > button:nth-of-type(2){
+#toolBar button:nth-of-type(2){
     background-image: url("../images/list_white_24dp.svg");
     background-repeat: no-repeat;
     width: 4rem;
@@ -214,16 +222,17 @@ main > button:nth-of-type(2){
     background-position: center;
 }
 main select{
-    background-color: #E74D7E;
+    background: #E74D7E;
 }
+
 
 /*---- Aside ----
 ------------------*/
 aside button{
     background: linear-gradient(90deg, #E74D7E 45%, #F9F5D8 100%);
     border: none;
-    width: 20rem;
-    height: 3rem;
+    width: 27rem;
+    height: 4rem;
     margin-bottom: 2rem;
     letter-spacing: .1rem;
 }
@@ -232,35 +241,38 @@ aside li{
     list-style-position: inside;
     padding: 1rem 0;
     border-bottom: dashed .1rem;
-    max-width: 20rem;
+    max-width: 27rem;
 }
 aside li:nth-last-of-type(1){
     border: none;
 }
-aside ul{
-    margin-left: 1.5rem;
-}
 aside img{
-    max-width: 10rem;
+    max-width: 6.8rem;
 }
 aside section:nth-of-type(4) li{
     list-style-type: none;
+}
+aside section{
+    max-width: 27rem;
+    margin: 2rem auto;
 }
 
 /*---- Footer ----
 -------------------*/
 footer{
-    background-image: url("../images/footer_pic.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/footer_pic.jpg") no-repeat #223844;
     max-width: 192rem;
     height: auto;
 }
 footer img{
-    width: 3.5rem;
+    width: 4rem;
     height: auto;
     margin: 0 .5rem 0 .5rem;
 }
-footer section, #footerWrapper > ul  li, footer nav li{
+#footerWrapper > ul:nth-of-type(2) img{
+    width: 3.5rem;
+}
+#footerWrapper > ul  li, footer nav li{
     display: inline-block;
 }
 #footerWrapper > ul{
@@ -268,27 +280,134 @@ footer section, #footerWrapper > ul  li, footer nav li{
     margin: 0 auto 1rem auto;
 }
 footer section{
-    max-width: 25rem;
-    margin: 5rem 0 2rem 0;
+    max-width: 31rem;
+    margin: 5rem auto 2rem auto;
 }
-footer nav li{
-    margin: 1rem;
-}
-footer section:nth-of-type(1){
-    margin: 5rem 10rem 2rem 1rem;
-}
-footer section:nth-of-type(2){
-    margin: 5rem 7.5rem 2rem 5rem;
-}
-footer section:nth-of-type(3){
-    margin: 5rem 5rem 2rem 7.5rem;
-}
-footer section:nth-of-type(4){
-    margin: 5rem auto 2rem 10rem;
+footer nav li:not(:nth-of-type(5)){
+    margin-right: 2rem;
 }
 footer section ul li{
     margin: 1.5rem auto 1.5rem 0;
     list-style-type: disc;
     list-style-position: inside;
 }
+#footerWrapper > ul:nth-of-type(2) li:nth-of-type(1){
+    margin:0 0 4rem 1.3rem;
+}
+footer section:nth-of-type(4) ul li:nth-of-type(1){
+    list-style-image: url("../images/house.png");
+}
+footer section:nth-of-type(4) ul li:nth-of-type(2){
+    list-style-image: url("../images/phone.png");
+}
+footer section:nth-of-type(4) ul li:nth-of-type(3){
+    list-style-image: url("../images/clock.png");
+}
+footer section:nth-of-type(4) ul li:nth-of-type(4){
+    list-style-image: url("../images/email.png");
+}
 
+/*---- Layout----
+------------------*/
+/* Header Layout */
+#topBar p, #topBar a, #topBar ul{
+    display: inline-block;
+}
+#topBar p:nth-of-type(2){
+    margin:0 25rem 0 16rem;
+}
+#topBar p:nth-of-type(1){
+    margin-right: 3rem;
+}
+
+#logoBox input, h1, #account, #currency, #cart{
+    float: left;
+}
+#logoBox::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+#logoBox{
+    padding: 3rem 0;
+    margin-bottom: 2.5rem;
+}
+h1{
+    margin: 0 30.5rem 0 29.5rem;
+}
+input{
+    padding: 1.2rem 4rem 1.2rem .5rem;
+    margin-left: 1rem;
+}
+
+/* Main Layout */
+main article img{
+    float: left;
+    margin-right: 3rem;
+    background-position: left;
+}
+main article::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+main article h3{
+    margin: 5rem 0 0 0;
+}
+#mainPhoto{
+    margin-left: 10rem;
+}
+#toolBar button:nth-of-type(1){
+    margin-left: 10rem;
+}
+#toolBar label{
+    margin-left: 70rem;
+}
+
+#products{
+    width: calc(100%/5 * 4);
+    float: right;
+}
+main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Aside Layout */
+aside{
+
+    float: left;
+    margin-top: 4rem;
+}
+aside section img{
+    float: right;
+}
+aside section:nth-of-type(4) li::after{
+    content: "";
+    display: block;
+    clear: right;
+}
+
+/* Footer Layout */
+footer section{
+    width: calc(100%/4);
+    float: left;
+}
+footer section:nth-of-type(4)::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+footer p{
+    float: left;
+    margin-right: 2rem;
+}
+footer nav{
+    text-align: right;
+}
+footer nav::after{
+    content: "";
+    display: inline-block;
+    clear: left;
+}

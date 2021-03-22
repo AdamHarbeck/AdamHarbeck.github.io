@@ -24,30 +24,30 @@
     </div>
 
     <div class="wrapper">
-
+        <div id="logoBox">
             <input type="search" placeholder="Search" >
 
+            <h1><img src="images/kosmetik_logo.png" alt="Logo for Kosmetik"/></h1>
 
-        <h1><img src="images/kosmetik_logo.png" alt="Logo for Kosmetik"/></h1>
+            <a id="account" href="#">Account</a>
 
-        <a id="account" href="#">Account</a>
+            <label for="currency"></label>
 
-        <label for="currency"></label>
+            <select name="currency" id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="AED">AED</option>
+                <option value="RUB">RUB</option>
+            </select>
 
-        <select name="currency" id="currency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="INR">INR</option>
-            <option value="JPY">JPY</option>
-            <option value="CAD">CAD</option>
-            <option value="CNY">CNY</option>
-            <option value="AED">AED</option>
-            <option value="RUB">RUB</option>
-        </select>
-
-        <a id="cart" href="#">Cart</a>
+            <a id="cart" href="#">Cart</a>
+        </div>
 
         <nav>
             <ul>
@@ -60,6 +60,7 @@
                 <li><a href="#">Pages</a></li>
             </ul>
         </nav>
+
     </div>
 
     <div id="breadCrumb">
@@ -74,113 +75,119 @@
 </header>
 
 <main>
-    <button type="button">Grid View</button>
-    <button type="button">List View</button>
+    <div id="products">
+        <div id="toolBar">
+            <button type="button">Grid View</button>
+            <button type="button">List View</button>
 
-    <label for="sorting">Sort by:</label>
-    <select name="sorting" id="sorting">
-        <option value="Featured">Featured</option>
-        <option value="Price, Low to High">Price, Low to High</option>
-        <option value="Price, High to Low">Price, High to Low</option>
-        <option value="A - Z">A-Z</option>
-        <option value="Z - A">Z-A</option>
-        <option value="Date, Old to New">Date, Old to New</option>
-        <option value="Date, New to Old">Date, New to Old</option>
-        <option value="Best Selling">Best Selling</option>
-    </select>
+            <label for="sorting">Sort by:</label>
+            <select name="sorting" id="sorting">
+                <option value="Featured">Featured</option>
+                <option value="Price, Low to High">Price, Low to High</option>
+                <option value="Price, High to Low">Price, High to Low</option>
+                <option value="A - Z">A-Z</option>
+                <option value="Z - A">Z-A</option>
+                <option value="Date, Old to New">Date, Old to New</option>
+                <option value="Date, New to Old">Date, New to Old</option>
+                <option value="Best Selling">Best Selling</option>
+            </select>
+        </div>
 
-    <img id="mainPhoto" src="images/model.jpg" alt="Model" />
 
-    <article>
-        <img src="images/foundation.jpg" alt="A bottle of foundation." />
-        <h3><a href="#">Foundation</a></h3>
-        <p>$200.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/lash_curler.webp" alt="An eye lash curler."/>
-        <h3><a href="#">Makeup Tool</a></h3>
-        <p>$500.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/lipstick.jpeg" alt="A tube of lipstick." />
-        <h3><a href="#">Glam Lipstick</a></h3>
-        <p>$800.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/warm_palette.jpg" alt="An eyeshadow palette in warm tones." />
-        <h3><a href="#">Maybelline Palette, Warm</a></h3>
-        <p>$600.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/contour_brush.jpeg" alt="A brush for contouring." />
-        <h3><a href="#">Foolzy Brush</a></h3>
-        <p>$250.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/color_corrector.jpg" alt="A palette of color correcting makeup." />
-        <h3><a href="#">Complextion Compact</a></h3>
-        <p>$200.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/rosa_cream.jpeg" alt="A tube of lipstick." />
-        <h3><a href="#">Miss Rose Cream</a></h3>
-        <p>$200.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/compact.webp" alt="A makeup powder compact." />
-        <h3><a href="#">Coloressence Powder</a></h3>
-        <p>$400.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/nail_polish.jpg" alt="Four bottles of nail polish." />
-        <h3><a href="#">Lakme Nail Polish</a></h3>
-        <p>$350.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
-    <article>
-        <img src="images/blush_brush.webp" alt="A makeup brush for blush." />
-        <h3><a href="#">Generic Blush Brush</a></h3>
-        <p>$280.00</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </article>
+        <img id="mainPhoto" src="images/model.jpg" alt="Model" />
+
+
+        <article>
+            <img src="images/foundation.jpg" alt="A bottle of foundation." />
+            <h3><a href="#">Foundation</a></h3>
+            <p>$200.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/lash_curler.webp" alt="An eye lash curler."/>
+            <h3><a href="#">Makeup Tool</a></h3>
+            <p>$500.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/lipstick.jpeg" alt="A tube of lipstick." />
+            <h3><a href="#">Glam Lipstick</a></h3>
+            <p>$800.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/warm_palette.jpg" alt="An eyeshadow palette in warm tones." />
+            <h3><a href="#">Maybelline Palette, Warm</a></h3>
+            <p>$600.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/contour_brush.jpeg" alt="A brush for contouring." />
+            <h3><a href="#">Foolzy Brush</a></h3>
+            <p>$250.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/color_corrector.jpg" alt="A palette of color correcting makeup." />
+            <h3><a href="#">Complextion Compact</a></h3>
+            <p>$200.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/rosa_cream.jpeg" alt="A tube of lipstick." />
+            <h3><a href="#">Miss Rose Cream</a></h3>
+            <p>$200.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/compact.webp" alt="A makeup powder compact." />
+            <h3><a href="#">Coloressence Powder</a></h3>
+            <p>$400.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/nail_polish.jpg" alt="Four bottles of nail polish." />
+            <h3><a href="#">Lakme Nail Polish</a></h3>
+            <p>$350.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+        <article>
+            <img src="images/blush_brush.webp" alt="A makeup brush for blush." />
+            <h3><a href="#">Generic Blush Brush</a></h3>
+            <p>$280.00</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </article>
+    </div>
 
     <aside>
         <section>
@@ -217,10 +224,10 @@
         <section>
             <h3><button type="button">Best Sellers</button></h3>
             <ul>
-                <li><h4><a href="#">Colorbar Eyeliner</a></h4><p>$300.00</p><a href="#"><img src="images/colorbar_eyeliner.jpg" alt="Tube of eyeliner and applicator." /></a></li>
-                <li><h4><a href="#">Eyebrow Pencil</a></h4><p>$100.00</p><a href="#"><img src="images/eyebrow_pencils.jpg" alt="Pencils for the eyebrows." /></a></li>
-                <li><h4><a href="#">Dessert Rose</a></h4><p>$500.00</p><a href="#"><img src="images/desert_rose.jpg" alt="An eyeshadow palette." /></a></li>
-                <li><h4><a href="#">Blue Ribbons Lipstick</a></h4><p>$150.00</p><a href="#"><img src="images/blue_ribbons.jpg" alt="Tubes of Lipsticks" /></a></li>
+                <li><img src="images/colorbar_eyeliner.jpg" alt="Tube of eyeliner and applicator." /><h4><a href="#">Colorbar Eyeliner</a></h4><p>$300.00</p><a href="#"></a></li>
+                <li><img src="images/eyebrow_pencils.jpg" alt="Pencils for the eyebrows." /><h4><a href="#">Eyebrow Pencil</a></h4><p>$100.00</p><a href="#"></a></li>
+                <li><img src="images/desert_rose.jpg" alt="An eyeshadow palette." /><h4><a href="#">Dessert Rose</a></h4><p>$500.00</p><a href="#"></a></li>
+                <li><img src="images/blue_ribbons.jpg" alt="Tubes of Lipsticks" /><h4><a href="#">Blue Ribbons Lipstick</a></h4><p>$150.00</p><a href="#"></a></li>
             </ul>
         </section>
     </aside>
@@ -275,7 +282,7 @@
             <li><a href="https://twitter.com/"><img src="images/twitter%20(1).png" alt="Link to Twitter"></a></li>
             <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Link to Facebook"></a></li>
             <li><a href="https://www.pinterest.com/"><img src="images/pinterest%20(1).png" alt="Link to Pinterest"></a></li>
-            <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Link to Instagram"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/instagram_1.png" alt="Link to Instagram"></a></li>
             <li><a href="https://www.tumblr.com/"><img src="images/tumblr.png" alt="Link to Tumblr"></a></li>
         </ul>
 
