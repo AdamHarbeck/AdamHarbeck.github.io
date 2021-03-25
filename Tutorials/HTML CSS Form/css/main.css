@@ -111,7 +111,7 @@ form::after {
 /* Credit Card */
 
 #card {
-    padding: 4rem 0 6rem 0;
+    padding: 4rem 0 2rem 0;
 }
 
 #card div:nth-of-type(1) {
@@ -136,6 +136,7 @@ form::after {
     width: calc(100%/3 - 1rem);
     float: left;
     margin-top: 2rem;
+    margin-right: 1rem;
 }
 
 form>fieldset {
@@ -240,4 +241,26 @@ button[type='submit']:not(.disabled):hover {
 button[type='submit']:not(.disabled):active {
     color: rgba(255, 255, 255, 1);
     transform: scale(1.1);
+}
+
+/* My Additions
+====================================================================== */
+#card div:nth-of-type(5){
+    width: calc(100%/3 - 1rem);
+    display: block;
+    margin-top: 2rem;
+}
+#payment>div:nth-of-type(1) p{
+    display: inline-block;
+    font-size: 1.3rem;
+    width: calc(100%/3 * 2.5);
+}
+#payment>div:nth-of-type(1) #subscribe{
+    display: inline-block;
+    width: 1.3rem;
+    margin-bottom: 2rem;
+}
+#donation>div p{
+    display: inline-block;
+    margin-right: 1rem;
 }

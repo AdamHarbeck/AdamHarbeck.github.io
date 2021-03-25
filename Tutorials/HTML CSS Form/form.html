@@ -43,6 +43,16 @@
                 </div>
 
             </fieldset>
+            <div>
+                <label for="progress">Meter</label>
+                <p>Progress to Goal: </p>
+                <progress max="100" value="75" id="progress">75/100</progress>
+            </div>
+            <div>
+                <label for="search">Color Picker</label>
+                <p>Business Donation? Search for your Business.</p>
+                <input type="search" name="search" id="search" placeholder="Business Search..." maxlength="20">
+            </div>
         </fieldset>
 
         <fieldset id="payment">
@@ -113,7 +123,18 @@
                     </select>
                 </div>
 
+                <div>
+                    <label for="zipCode">Zip Code</label>
+                    <input type="number" name="zipCode" id="zipCode" placeholder="Zip Code" required>
+                </div>
             </fieldset>
+
+            <div>
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" name="subscribe" id="subscribe" value="yes" checked>
+                <p>I agree to receive emails from this website.</p>
+            </div>
+
             <div>
                 <button type="submit">Submit Donation</button>
             </div>
@@ -122,3 +143,4 @@
     </form>
 </body>
 </html>
+
