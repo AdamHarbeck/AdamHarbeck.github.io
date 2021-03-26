@@ -170,7 +170,7 @@ input::placeholder{
 header nav li:not(:nth-of-type(1)){
     margin-left: 2.5rem;
 }
-header nav li:not(:nth-of-type(1), :nth-of-type(6)){
+header nav li:not(:nth-of-type(1)), header nav li:not(:nth-of-type(6)){
     background: url("../images/down_arrow.png") no-repeat right;
     background-size: 1.5rem;
     padding-right: 2rem;
@@ -376,7 +376,6 @@ main::after{
 
 /* Aside Layout */
 aside{
-
     float: left;
     margin-top: 4rem;
 }
@@ -410,4 +409,7 @@ footer nav::after{
     content: "";
     display: inline-block;
     clear: left;
+}
+#footerWrapper > ul:nth-of-type(1){
+    clear: both;
 }
