@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Righteous', cursive;
@@ -75,7 +76,7 @@ header nav li{
     padding: 0 1rem;
 }
 header nav{
-    max-width: 78rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding-bottom: 2rem;
 }
@@ -412,4 +413,112 @@ footer nav::after{
 }
 #footerWrapper > ul:nth-of-type(1){
     clear: both;
+}
+
+/* Contact Us Additions ====
+============================= */
+header label, form label{
+    display: none;
+}
+#contactInfo{
+    max-width: 120rem;
+    margin: 2rem auto 2rem auto;
+}
+#contactInfo > h2{
+    max-width: 32.3rem;
+    margin: 0 auto 2rem auto;
+    letter-spacing: .3rem;
+    font-size: 3.6rem;
+}
+#contactInfo > p{
+    text-align: center;
+}
+#contactInfo > p:nth-of-type(1){
+    font: 2.6rem "Caveat", cursive;
+    margin-bottom: 1.5rem;
+}
+#contactInfo > p:nth-of-type(2){
+    background: url("../images/radial_button.svg") no-repeat center;
+    background-size: 8rem;
+    text-indent: -9999px;
+}
+#contactInfo section{
+    margin: 4rem auto 2rem auto;
+}
+#contactInfo li{
+    width: calc(100%/3 - 2rem);
+    float: left;
+    margin: 1rem;
+    border: solid .2rem #223844;
+    padding: 3rem 8rem;
+}
+#contactInfo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+form{
+    max-width: 120rem;
+    margin: 5rem auto;
+    padding: 3rem;
+}
+form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#information{
+    width: calc(100%/2 - 3rem);
+    float: left;
+    padding-left: .775rem;
+    height: 25rem;
+    border: none;
+}
+#message{
+    width: calc(100%/2 - 3rem);
+    float: right;
+    height: 25rem;
+    border: none;
+}
+textarea{
+    width: calc(100% - 1.9rem);
+    height: 15rem;
+    background: transparent;
+    padding: 1rem;
+    font-size: 1.4rem
+}
+#information input{
+    width: calc(100% - 1.9rem);
+    margin: 0 0 4.6rem 0;
+    padding: 1.5rem 2rem;
+    background: transparent;
+    border: solid .1rem;
+}
+#message button{
+    width: 7rem;
+    height: 3.8rem;
+    background: #E74D7E;
+    color: #F9F5D8;
+    font-size: 1.6rem ;
+    border: none;
+    margin-top: 2rem
+}
+
+textarea, #information input, #message button{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+}
+
+#contactInfo li:nth-of-type(1){
+    background: url("../images/Asset 1.svg") no-repeat 5% 35%;
+    background-size: 5rem;
+
+}
+#contactInfo li:nth-of-type(2){
+    background: url("../images/Asset 2.svg") no-repeat 5% 35%;
+    background-size: 5rem;
+}
+#contactInfo li:nth-of-type(3){
+    background: url("../images/Asset 4.svg") no-repeat 5% 35%;
+    background-size: 5rem;
 }
